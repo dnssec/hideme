@@ -1,0 +1,80 @@
+{
+  "id": "bd8e4887-4652-4cf5-9699-6dfbcb270dca",
+  "version": "2.0",
+  "name": "411.info",
+  "url": "https://www.whitepages.com",
+  "tests": [{
+    "id": "80c5777f-5149-4f52-9769-aa47ce2d3f0c",
+    "name": "lol",
+    "commands": [{
+      "id": "9b88c0c8-5c52-4803-8b1d-86d502c14341",
+      "comment": "",
+      "command": "open",
+      "target": "/name/Shawn-Keszler/SD?fs=1&searchedName=shawn%20keszler",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc6b6a62-2083-42c3-a420-3b035b9c8db5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1032x861",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e558c0b-0503-4539-b15b-a74435264a1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sb-card--0 > .serp-card-link",
+      "targets": [
+        ["css=.sb-card--0 > .serp-card-link", "css:finder"],
+        ["xpath=//a[contains(@href, '/checkout/summary?wpId=Po8MoB0NGNy&wp_content=card&wp_medium=PersonContactInfoUpsell&wp_source=PersonResults&wp_term=serp_ep0&funnelType=person_onepages_1')]", "xpath:href"],
+        ["xpath=//div/div[2]/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9506",
+      "windowTimeout": 2000
+    }, {
+      "id": "e8f6e4ce-8933-4093-8b0e-dbaca28a9fa4",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1a8d15c-20b5-416f-9df7-8daefe824e91",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9506}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3df86726-874a-40d5-80fa-cd6c5e68b3b7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffc59d6b-b4a4-4aa4-910f-8bbe14eb67e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.name-wrap > span",
+      "targets": [
+        ["css=.name-wrap > span", "css:finder"],
+        ["xpath=//a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d39661fe-8018-4fce-aa06-bc37fc68f2f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80c5777f-5149-4f52-9769-aa47ce2d3f0c"]
+  }],
+  "urls": ["https://www.whitepages.com/"],
+  "plugins": []
+}
