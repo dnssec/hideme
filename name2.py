@@ -13,6 +13,7 @@ def do_search(site_key, first_name, last_name):
         'Cubib': 'https://cubib.com/search_results.php?fname={first_name}&lname=&{last_name}&locations:all',
         'FamilyTreeNow': 'https://www.familytreenow.com/search/genealogy/results?first&{first_name}&last=&{last_name}',
         'Intelius': 'https://www.intelius.com/people-search/&{first_name}&-&{last_name}',
+        'Radaris': 'https://radaris.com/p/{first_name}&/&{last_name}',
         # Add all other site templates here
     }
     
@@ -26,8 +27,9 @@ def do_all(first_name, last_name):
         'Nuwber',
         'XLEK',
         'Cubib',
-        'FamilyTreeNow'
-        'Intelius'
+        'FamilyTreeNow',
+        'Intelius',
+        'Radaris'
         # Add all other site keys here
     ]
     
