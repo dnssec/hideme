@@ -14,6 +14,7 @@ def do_search(site_key, first_name, last_name):
         'FamilyTreeNow': 'https://www.familytreenow.com/search/genealogy/results?first&{first_name}&last=&{last_name}',
         'Intelius': 'https://www.intelius.com/people-search/&{first_name}&-&{last_name}',
         'Radaris': 'https://radaris.com/p/{first_name}&/&{last_name}',
+        'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}&-&{last_name}',
         # Add all other site templates here
     }
     
@@ -30,6 +31,7 @@ def do_all(first_name, last_name):
         'FamilyTreeNow',
         'Intelius',
         'Radaris'
+        'CyberBackgroundChecks'
         # Add all other site keys here
     ]
     
