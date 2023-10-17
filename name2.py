@@ -24,7 +24,15 @@ def do_search(site_key, first_name, last_name):
         'PeopleSearchNow': 'https://www.peoplesearchnow.com/person/{first_name}-{last_name}',
         'Webmii': 'https://webmii.com/people?n=%22{first_name}%20{last_name}%22',
         'Social-Searcher': 'https://www.social-searcher.com/search-users/?q6={first_name}&+&{last_name}',
-        'TruthFinder': 'https://www.truthfinder.com/results/?firstName={first_name}}&&lastName=&{last_name}}&state=ALL',
+        'TruthFinder': 'https://www.truthfinder.com/results/?firstName={first_name}&&lastName={last_name}&state=ALL',
+        'PeoplebyName': 'https://www.peoplebyname.com/people/{last_name}/{first_name}',
+        'WhitePages': 'https://www.whitepages.com/name/{first_name}-{last_name}',
+        'ThatsThem': 'https://thatsthem.com/name/{first_name}-{last_name}',
+        'ClustrMaps': 'https://clustrmaps.com/persons/{first_name}-{last_name}',
+        'RocketReach': 'http://google.com/search?q=site:rocketreach.co+"{first_name}&{last_name}&"',
+        'OfficialUSA': 'https://www.officialusa.com/names/{first_name}-{last_name}/',
+        'Classmates': 'https://www.classmates.com/siteui/search/results?q={first_name}%20{last_name}&searchType=all',
+        'IDcrawl': 'https://idcrawl.com/{first_name}-{last_name}',
         # Add all other site templates here
     }
     
@@ -40,18 +48,26 @@ def do_all(first_name, last_name):
         'Cubib',
         'FamilyTreeNow',
         'Intelius',
-        'Radaris'
-        'CyberBackgroundChecks'
-        'Spytox'
-        'SearchPeopleFree'
-        'Spokeo'
-        'AdvancedBackgroundChecks'
-        'Yasni'
-        'ZabaSearch'
-        'PeopleSearchNow'
-        'Webmii'
-        'Social-Searcher'
-        'TruthFinder'
+        'Radaris',
+        'CyberBackgroundChecks',
+        'Spytox',
+        'SearchPeopleFree',
+        'Spokeo',
+        'AdvancedBackgroundChecks',
+        'Yasni',
+        'ZabaSearch',
+        'PeopleSearchNow',
+        'Webmii',
+        'Social-Searcher',
+        'TruthFinder',
+        'PeoplebyName',
+        'WhitePages',
+        'ThatsThem',
+        'ClustrMaps',
+        'RocketReach',
+        'OfficialUSA',
+        'Classmates',
+        'IDcrawl',
         # Add all other site keys here
     ]
     
