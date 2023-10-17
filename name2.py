@@ -20,6 +20,11 @@ def do_search(site_key, first_name, last_name):
         'Spokeo': 'https://www.spokeo.com/{first_name}&-&{last_name}&?loaded=1',
         'AdvancedBackgroundChecks': 'https://www.advancedbackgroundchecks.com/names/{first_name}-{last_name}', 
         'Yasni': 'https://www.yasni.com/{first_name}+{last_name}/check+people',
+        'ZabaSearch': 'https://www.zabasearch.com/people/{first_name}+{last_name}/',
+        'PeopleSearchNow': 'https://www.peoplesearchnow.com/person/{first_name}-{last_name}',
+        'Webmii': 'https://webmii.com/people?n=%22{first_name}%20{last_name}%22',
+        'Social-Searcher': 'https://www.social-searcher.com/search-users/?q6={first_name}&+&{last_name}',
+        'TruthFinder': 'https://www.truthfinder.com/results/?firstName={first_name}}&&lastName=&{last_name}}&state=ALL',
         # Add all other site templates here
     }
     
@@ -42,6 +47,11 @@ def do_all(first_name, last_name):
         'Spokeo'
         'AdvancedBackgroundChecks'
         'Yasni'
+        'ZabaSearch'
+        'PeopleSearchNow'
+        'Webmii'
+        'Social-Searcher'
+        'TruthFinder'
         # Add all other site keys here
     ]
     
