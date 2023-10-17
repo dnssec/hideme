@@ -17,6 +17,9 @@ def do_search(site_key, first_name, last_name):
         'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}&-&{last_name}',
         'Spytox': 'https://www.spytox.com/people/search?name= {first_name}&+ &{last_name}',
         'SearchPeopleFree': 'https://www.searchpeoplefree.com/find/{first_name}&-&{last_name}',
+        'Spokeo': 'https://www.spokeo.com/{first_name}&-&{last_name}&?loaded=1',
+        'AdvancedBackgroundChecks': 'https://www.advancedbackgroundchecks.com/names/{first_name}-{last_name}', 
+        'Yasni': 'https://www.yasni.com/{first_name}+{last_name}/check+people',
         # Add all other site templates here
     }
     
@@ -36,6 +39,9 @@ def do_all(first_name, last_name):
         'CyberBackgroundChecks'
         'Spytox'
         'SearchPeopleFree'
+        'Spokeo'
+        'AdvancedBackgroundChecks'
+        'Yasni'
         # Add all other site keys here
     ]
     
