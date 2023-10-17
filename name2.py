@@ -16,6 +16,7 @@ def do_search(site_key, first_name, last_name):
         'Radaris': 'https://radaris.com/p/{first_name}&/&{last_name}',
         'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}&-&{last_name}',
         'Spytox': 'https://www.spytox.com/people/search?name= {first_name}&+ &{last_name}',
+        'SearchPeopleFree': 'https://www.searchpeoplefree.com/find/{first_name}&-&{last_name}',
         # Add all other site templates here
     }
     
@@ -34,6 +35,7 @@ def do_all(first_name, last_name):
         'Radaris'
         'CyberBackgroundChecks'
         'Spytox'
+        'SearchPeopleFree'
         # Add all other site keys here
     ]
     
