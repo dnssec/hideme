@@ -35,7 +35,7 @@ def do_search(site_key, first_name, last_name):
     # Add all other site templates here
 }
 
-This should make it easier to navigate through your code.
+#This should make it easier to navigate through your code.
 
     
     url = url_templates.get(site_key).format(first_name=first_name, last_name=last_name)
