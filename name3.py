@@ -6,6 +6,7 @@ def do_pop_all(first_name, last_name):
 
 def do_search(site_key, first_name, last_name):
     url_templates = {
+    'Addresses': 'https://www.addresses.com/people/{first_name}+{last_name}',
     'AdvancedBackgroundChecks': 'https://www.advancedbackgroundchecks.com/names/{first_name}-{last_name}',
     'ClustrMaps': 'https://clustrmaps.com/persons/{first_name}-{last_name}',
     'Classmates': 'https://www.classmates.com/siteui/search/results?q={first_name}%20{last_name}&searchType=all',
@@ -43,6 +44,7 @@ def do_search(site_key, first_name, last_name):
 
 def do_all(first_name, last_name):
     site_keys = [
+    'Addresses',
     'AdvancedBackgroundChecks',
     'ClustrMaps',
     'Classmates',
