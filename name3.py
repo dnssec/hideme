@@ -1,3 +1,4 @@
+#Author - @brokep / @prolifichacker
 import webbrowser
 
 def do_pop_all(first_name, last_name):
