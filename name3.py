@@ -7,8 +7,12 @@ def do_pop_all(first_name, last_name):
 
 def do_search(site_key, first_name, last_name):
     url_templates = {
+    '411info': 'https://411.info/people/?fn&{first_name}-{last_name}',
+    '411': 'https://www.411.com/person-search/{first_name}-{last_name}',
     'Addresses': 'https://www.addresses.com/people/{first_name}+{last_name}',
+    'Addresssearch': 'https://www.addresssearch.com/people-search-full-name.php?fn={first_name}&ln={last_name},
     'AdvancedBackgroundChecks': 'https://www.advancedbackgroundchecks.com/names/{first_name}-{last_name}',
+    'AdvancedPeopleSearch': 'https://www.advanced-people-search.com/people/{first_name}-{last_name}',
     'ClustrMaps': 'https://clustrmaps.com/persons/{first_name}-{last_name}',
     'Classmates': 'https://www.classmates.com/siteui/search/results?q={first_name}%20{last_name}&searchType=all',
     'Cubib': 'https://cubib.com/search_results.php?fname={first_name}&lname=&{last_name}&locations:all',
@@ -45,8 +49,12 @@ def do_search(site_key, first_name, last_name):
 
 def do_all(first_name, last_name):
     site_keys = [
+    '411info',
+    '411',
     'Addresses',
+    'Addresssearch',
     'AdvancedBackgroundChecks',
+    'AdvancedPeopleSearch',
     'ClustrMaps',
     'Classmates',
     'Cubib',
