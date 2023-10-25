@@ -82,6 +82,7 @@ void do_all(const std::string& first_name, const std::string& last_name) {
         "Yasni",
         "ZabaSearch"
         // add all other site keys here
+	// more to be added from workbook
     };
 
     for(const auto& site_key : site_keys) {
