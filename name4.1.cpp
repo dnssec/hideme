@@ -1,3 +1,4 @@
+//author alex k @brokep / x.com/prolifichacker
 #include <iostream>
 #include <string>
 #include <unordered_map>
