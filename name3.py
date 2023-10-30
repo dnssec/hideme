@@ -11,7 +11,7 @@ def do_search(site_key, first_name, last_name):
     '411': 'https://www.411.com/person-search/{first_name}-{last_name}',
     'AllPeople': 'https://allpeople.com/search?ss={first_name}+{last_name}&ss-e=&ss-p=&ss-i=&where=&industry-auto=&where-auto=',
     'Addresses': 'https://www.addresses.com/people/{first_name}+{last_name}',
-    'Addresssearch': 'https://www.addresssearch.com/people-search-full-name.php?fn={first_name}&ln={last_name},
+    'Addresssearch': 'https://www.addresssearch.com/people-search-full-name.php?fn={first_name}&ln={last_name}',
     'AdvancedBackgroundChecks': 'https://www.advancedbackgroundchecks.com/names/{first_name}-{last_name}',
     'AdvancedPeopleSearch': 'https://www.advanced-people-search.com/people/{first_name}-{last_name}',
     'Anywho': 'https://www.anywho.com/people/{first_name}+{last_name}',
@@ -27,7 +27,7 @@ def do_search(site_key, first_name, last_name):
     'Classmates': 'https://www.classmates.com/siteui/search/results?q={first_name}%20{last_name}&searchType=all',
     'Cubib': 'https://cubib.com/search_results.php?fname={first_name}&lname=&{last_name}&locations:all',
     'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}&-&{last_name}',
-    'Dataveria': 'https://dataveria.com/profile/search?fname={first_name}&lname={last_name}&state=&city=&fage=
+    'Dataveria': 'https://dataveria.com/profile/search?fname={first_name}&lname={last_name}&state=&city=&fage=',
     'FamilyTreeNow': 'https://www.familytreenow.com/search/genealogy/results?first&{first_name}&last=&{last_name}',
     'FastPeople': 'https://www.fastpeoplesearch.com/name/{first_name}-{last_name}',
     'FindPeopleSearch': 'https://www.findpeoplesearch.com/{first_name}+{last_name}/1/16983092709439',
