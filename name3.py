@@ -26,7 +26,7 @@ def do_search(site_key, first_name, last_name):
     'ClustrMaps': 'https://clustrmaps.com/persons/{first_name}-{last_name}',
     'Classmates': 'https://www.classmates.com/siteui/search/results?q={first_name}%20{last_name}&searchType=all',
     'Cubib': 'https://cubib.com/search_results.php?fname={first_name}&lname=&{last_name}&locations:all',
-    'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}&-&{last_name}',
+    'CyberBackgroundChecks': 'https://www.cyberbackgroundchecks.com/people/{first_name}-{last_name}',
     'Dataveria': 'https://dataveria.com/profile/search?fname={first_name}&lname={last_name}&state=&city=&fage=',
     'FamilyTreeNow': 'https://www.familytreenow.com/search/genealogy/results?first&{first_name}&last=&{last_name}',
     'FastPeople': 'https://www.fastpeoplesearch.com/name/{first_name}-{last_name}',
