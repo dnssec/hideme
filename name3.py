@@ -33,6 +33,7 @@ def do_search(site_key, first_name, last_name):
     'FastPeople': 'https://www.fastpeoplesearch.com/name/{first_name}-{last_name}',
     'FindPeopleSearch': 'https://www.findpeoplesearch.com/{first_name}+{last_name}/1/16983092709439',
     'Freepeopledirectory': 'https://www.freepeopledirectory.com/name/{first_name}-{last_name}',
+    'Gladiknow': 'https://gladiknow.com/index-people-search?fn={first_name}&ln={last_name}&city=&state=&age=&dob=&relatives=&aliases=&phones=&email=&search=',
     'IDcrawl': 'https://idcrawl.com/{first_name}-{last_name}',
     'Intelius': 'https://www.intelius.com/people-search/&{first_name}&-&{last_name}',
     'LocatePeople': 'https://www.locatepeople.org/{first_name}-{last_name}/',
