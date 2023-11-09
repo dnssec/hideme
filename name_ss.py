@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.common.exceptions import WebDriverException
 import time
 
 # Set up headless Chrome options
@@ -9,15 +10,16 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
 # Set path to chromedriver as per your configuration
-webdriver_path = '/path/to/chromedriver'
+webdriver_path = '/usr/bin/chromedriver'
 
 # Set up driver
-driver = webdriver.Chrome(options=chrome_options, executable_path=webdriver_path)
+#driver = webdriver.Chrome(options=chrome_options, executable_path=webdriver_path)
+driver = webdriver.Chrome(options=chrome_options)
 
 def do_search_and_screenshot(site_key, first_name, last_name):
     url_templates = {
         # ... [Your existing URL templates] ...
-            '411info': 'https://411.info/people/?fn&{first_name}-{last_name}',
+    '411info': 'https://411.info/people/?fn&{first_name}-{last_name}',
     '411': 'https://www.411.com/person-search/{first_name}-{last_name}',
     'AllPeople': 'https://allpeople.com/search?ss={first_name}+{last_name}&ss-e=&ss-p=&ss-i=&where=&industry-auto=&where-auto=',
     'Addresses': 'https://www.addresses.com/people/{first_name}+{last_name}',
@@ -67,7 +69,7 @@ def do_search_and_screenshot(site_key, first_name, last_name):
     'Spytox': 'https://www.spytox.com/people/search?name= {first_name}&+ &{last_name}',
     'TelephoneDictories': 'https://www.telephonedirectories.us/{first_name}-{last_name}',
     'ThatsThem': 'https://thatsthem.com/name/{first_name}-{last_name}',
-    'TruePeople': 'https://www.truepeoplesearch.com/results?name={first_name}%20{last_name}',
+    'TruePeople': 'https://www.truepeoplesearch.com/results?name={first_name}%20{last_name}',  
     'TruthFinder': 'https://www.truthfinder.com/results/?firstName={first_name}&&lastName={last_name}&state=ALL',
     'Webmii': 'https://webmii.com/people?n=%22{first_name}%20{last_name}%22',
     'WhitePages': 'https://www.whitepages.com/name/{first_name}-{last_name}',
@@ -77,19 +79,23 @@ def do_search_and_screenshot(site_key, first_name, last_name):
         
     }
 
-    url = url_templates.get(site_key).format(first_name=first_name, last_name=last_name)
-    driver.get(url)
-    
-    # Wait for the page to load completely
-    time.sleep(2)  # sleep for 2 seconds; adjust as needed
+    if site_key in url_templates:
+        url = url_templates[site_key].format(first_name=first_name, last_name=last_name)
+        
+        try:
+            driver.get(url)
+            time.sleep(2)  # Adjust time as needed for the page to load
+            driver.save_screenshot(f"{site_key}_{first_name}_{last_name}.png")
+        except WebDriverException as e:
+            print(f"An error occurred while accessing {url}: {e}")
+    else:
+        print(f"No URL template found for site key: {site_key}")
 
-    # Take screenshot
-    driver.save_screenshot(f"{site_key}_{first_name}_{last_name}.png")
 
 def do_all_with_screenshots(first_name, last_name):
     site_keys = [
         # ... [Your existing site keys] ...
-            '411info',
+    '411info',
     '411',
     'Addresses',
     'Addresssearch',
@@ -129,8 +135,6 @@ def do_all_with_screenshots(first_name, last_name):
     'PrivateEye',
     'Publicrecordsnow',
     'Pub360',
-    'Publicdatausa',
-    'Radaris',
     'RocketReach',
     'SearchPeopleFree',
     'Social-Searcher',
@@ -144,14 +148,13 @@ def do_all_with_screenshots(first_name, last_name):
     'WhitePages',
     'Yasni',
     'ZabaSearch',
-    'XLEK'
     ]
-    
     for site_key in site_keys:
         do_search_and_screenshot(site_key, first_name, last_name)
 
 # Example usage:
 do_all_with_screenshots("John", "Doe")
+
 
 # Clean up (close the browser)
 driver.quit()
