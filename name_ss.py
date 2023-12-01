@@ -9,6 +9,23 @@ chrome_options.add_argument("--headless")  # Ensure GUI is off
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
+# Add headers for stealth
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+chrome_options.add_argument("--disable-extensions")
+chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--disable-infobars")
+chrome_options.add_argument("--disable-notifications")
+chrome_options.add_argument("--disable-popup-blocking")
+chrome_options.add_argument("--disable-save-password-bubble")
+chrome_options.add_argument("--disable-translate")
+chrome_options.add_argument("--disable-web-security")
+chrome_options.add_argument("--ignore-certificate-errors")
+chrome_options.add_argument("--no-default-browser-check")
+chrome_options.add_argument("--no-first-run")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--no-zygote")
+chrome_options.add_argument("--single-process")
+
 # Set path to chromedriver as per your configuration
 webdriver_path = '/usr/bin/chromedriver'
 
